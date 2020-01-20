@@ -1,0 +1,27 @@
+table {
+    border-collapse: collapse;
+}
+
+table, tr, td, input {
+    /*border: 1px solid black;*/
+    height: 50px;
+}
+
+.time {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 15px;
+
+}
+
+ion-icon {
+    font-size: 40px;
+}
+
+/*
+.time {
+    width: 50px;
+    border-left-color: white;
+    padding-left: 20px;
+}
+*/
