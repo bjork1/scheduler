@@ -58,15 +58,154 @@ $keep5.val($store5);
 
 //Start Adding in functions for date time from moment.js
 //For each hours 1-9 create variable
-//Create if statement for each time slot if hours are between that time
+//Create 3 if statements for each time slot if hours are after, during, or before that time
 //set background color within each if statement: grey(past),red(current),green(future)
 
 var time = moment().format('H:mm:ss');
 console.log(time);
-var hours = new Date().getHours();
-if (hours >= 7 && hours <= 20) {
-    console.log("Yes!");
+
+var hours9 = new Date().getHours();
+var hours10 = new Date().getHours();
+var hours11 = new Date().getHours();
+var hours12 = new Date().getHours();
+var hours1 = new Date().getHours();
+var hours2 = new Date().getHours();
+var hours3 = new Date().getHours();
+var hours4 = new Date().getHours();
+var hours5 = new Date().getHours();
+
+console.log(hours4);
+
+
+//if (hours9 >= 7 && hours9 <= 20) {
+if (hours9 > 9) {
+    console.log("Check9before");
+    $('#box9').css("background-color","grey");
 }
+if (hours9 === 9) {
+    $('#box9').css("background-color","red");
+    console.log("Check9during");
+
+}
+if (hours9 < 9) {
+    $('#box9').css("background-color","green");
+    console.log("Check9after");
+}
+
+if (hours10 > 10) {
+    console.log("Check10before");
+    $('#box10').css("background-color","grey");
+}
+if (hours10 === 10) {
+    $('#box10').css("background-color","red");
+    console.log("Check10during");
+}
+if (hours10 < 10) {
+    $('#box10').css("background-color","green");
+    console.log("Check10after");
+}
+
+if (hours11 > 11) {
+    console.log("Check11before");
+    $('#box11').css("background-color","grey");
+}
+if (hours11 === 11) {
+    $('#box11').css("background-color","red");
+    console.log("Check11during");
+}
+if (hours11 < 11) {
+    $('#box11').css("background-color","green");
+    console.log("Check11after");
+}
+
+if (hours12 > 12) {
+    console.log("Check12before");
+    $('#box12').css("background-color","grey");
+}
+if (hours12 === 12) {
+    $('#box12').css("background-color","red");
+    console.log("Check12during");
+}
+if (hours12 < 12) {
+    $('#box12').css("background-color","green");
+    console.log("Check12after");
+}
+
+if (hours1 > 13) {
+    console.log("Check1before");
+    $('#box1').css("background-color","grey");
+}
+if (hours1 === 13) {
+    $('#box1').css("background-color","red");
+    console.log("Check1during");
+}
+if (hours1 < 13) {
+    $('#box1').css("background-color","green");
+    console.log("Check1after");
+}
+
+if (hours2 > 14) {
+    console.log("Check2before");
+    $('#box2').css("background-color","grey");
+}
+if (hours2 === 14) {
+    $('#box2').css("background-color","red");
+    console.log("Check2during");
+}
+if (hours2 < 14) {
+    $('#box2').css("background-color","green");
+    console.log("Check2after");
+}
+
+if (hours3 > 15) {
+    console.log("Check3before");
+    $('#box3').css("background-color","grey");
+}
+if (hours3 === 15) {
+    $('#box3').css("background-color","red");
+    console.log("Check3during");
+}
+if (hours3 < 15) {
+    $('#box3').css("background-color","green");
+    console.log("Check3after");
+}
+
+if (hours4 > 16) {
+    console.log("Check4before");
+    $('#box4').css("background-color","grey");
+}
+if (hours4 === 16) {
+    $('#box4').css("background-color","red");
+    console.log("Check4during");
+}
+if (hours4 < 16) {
+    $('#box4').css("background-color","green");
+    console.log("Check4after");
+}
+
+if (hours5 > 17) {
+    console.log("Check5before");
+    $('#box5').css("background-color","grey");
+}
+if (hours5 === 17) {
+    $('#box5').css("background-color","red");
+    console.log("Check5during");
+}
+if (hours5 < 17) {
+    $('#box5').css("background-color","green");
+    console.log("Check5after");
+}
+
+//End if statements
+
+
+
+var Now = moment().format('dddd, MMMM Do');
+var x = document.getElementById('tpa');
+x.innerHTML = Now;
+
+
+
 
 
 
@@ -80,18 +219,7 @@ if (hours >= 7 && hours <= 20) {
 
 
 //Playing with Date Time from exteral sites
-
-
-var numValue = $('#gina').text();
-var sd = parseInt(numValue);
-
-
-var Now = moment().format('MMMM D, YYYY hh:mm:ss');
-var x = document.getElementById('tpa');
-x.innerHTML = Now;
-
-
-
+/*
 
 //console.log(moment('2:04:26 p').isAfter('3:01:16 p'));
 
@@ -105,6 +233,9 @@ function diff_hours(dt2, dt1)
  }
 
 
+
+var numValue = $('#gina').text();
+var sd = parseInt(numValue);
 
 dt1 = new Date(Now);
 dt2 = new Date("January 20, 2020 05:11:14");
@@ -120,7 +251,7 @@ else if (difference <4) {
     $('#box1').css("background-color","green");
 }
 
-
+*/
 
 //val($test.val() + '-');
 
